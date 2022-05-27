@@ -261,10 +261,13 @@ public:
   // Read callback function
   std::function<void(void)> readFunc;
 
+  // Set output mode to silent
+  void set_silent_mode(bool _silent_mode);
+
 private:
   std::shared_ptr<CanHandle> handle;
   bool on_bus = false;
-  bool listen_only = false;
+  bool silent_mode = false;
 };
 
 void proxyCallback(canNotifyData* data);
