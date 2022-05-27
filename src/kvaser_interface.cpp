@@ -595,7 +595,7 @@ void KvaserCanUtils::setFlagsFromMsg(const CanMsg& msg, uint32_t* flags)
   msg.error_flags.bit1_err ? * flags |= canMSGERR_BIT1 : * flags &= ~canMSGERR_BIT1;
 }
 
-ReturnStatuses KvaserCan::set_listen_only(bool _listen_only)
+void KvaserCan::set_listen_only(bool _listen_only)
 {
   listen_only = _listen_only;
 }
