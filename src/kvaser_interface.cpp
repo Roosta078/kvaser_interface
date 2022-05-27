@@ -594,3 +594,7 @@ void KvaserCanUtils::setFlagsFromMsg(const CanMsg& msg, uint32_t* flags)
   msg.error_flags.bit0_err ? * flags |= canMSGERR_BIT0 : * flags &= ~canMSGERR_BIT0;
   msg.error_flags.bit1_err ? * flags |= canMSGERR_BIT1 : * flags &= ~canMSGERR_BIT1;
 }
+
+ReturnStatuses KvaserCan::set_silent_mode(){
+  return ReturnStatuses::OK;
+}
