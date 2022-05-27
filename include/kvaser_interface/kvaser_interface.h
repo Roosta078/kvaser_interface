@@ -261,6 +261,9 @@ public:
   // Read callback function
   std::function<void(void)> readFunc;
 
+  // Set flag for silent mode
+  ReturnStatuses set_listen_only(bool);
+
 private:
   std::shared_ptr<CanHandle> handle;
   bool on_bus = false;
