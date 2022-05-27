@@ -266,8 +266,6 @@ public:
 private:
   std::shared_ptr<CanHandle> handle;
   bool on_bus = false;
-
-public:
   bool listen_only = false;
   
 };
