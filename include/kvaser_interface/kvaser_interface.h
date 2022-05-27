@@ -261,9 +261,10 @@ public:
   // Read callback function
   std::function<void(void)> readFunc;
 
-  bool listen_only = false;
+  
 
 private:
+  bool listen_only = false;
   std::shared_ptr<CanHandle> handle;
   bool on_bus = false;
   
