@@ -115,11 +115,11 @@ ReturnStatuses KvaserCan::open(const uint32_t& channel_index, const uint32_t& bi
     {
       canSetBusOutputControl(*handle, canDRIVER_SILENT);
     }
-    else 
+    else
     {
       canSetBusOutputControl(*handle, canDRIVER_NORMAL);
     }
-    
+
     if (canBusOn(*handle) < 0)
       return ReturnStatuses::INIT_FAILED;
 
