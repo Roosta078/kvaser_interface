@@ -261,6 +261,7 @@ public:
   // Read callback function
   std::function<void(void)> readFunc;
 
+  // Set output mode to silent
   void set_silent_mode(bool);
 
 private:
