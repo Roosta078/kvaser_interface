@@ -264,7 +264,7 @@ public:
 private:
   std::shared_ptr<CanHandle> handle;
   bool on_bus = false;
-  ReturnStatuses set_silent_mode();
+  void set_silent_mode();
 };
 
 void proxyCallback(canNotifyData* data);
