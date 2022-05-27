@@ -44,7 +44,6 @@ commands:
           name: Run Tests in Docker
           command: |
             docker exec test /bin/bash -c "source \`find /opt/ros -name setup.bash | sort | head -1\` && catkin run_tests -j1 && catkin_test_results"
-            cat build/kvaser_interface/test_results/kvaser_interface/roslint-kvaser_interface.xml
       - run:
           name: Shut Down Container
           command: |
