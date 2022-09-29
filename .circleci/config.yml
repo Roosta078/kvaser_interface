@@ -45,7 +45,7 @@ commands:
           command: |
             docker exec test /bin/bash -c "source \`find /opt/ros -name setup.bash | sort | head -1\` && catkin run_tests -j1 && catkin_test_results"
       - run:
-          name: Shut Down Container
+          name: Shut Down Container 
           command: |
             docker kill $(docker ps -l -q)
 
